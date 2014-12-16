@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CBI Charlotte</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- jQueryMobileCSS - styling-->
+		<link rel="stylesheet" href="css/jqeury.mobile.theme.min.css" />
+				
+		<!-- jQueryMobile icons -->
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		
+		<!-- jQueryMobile core CSS -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+        
+		<!-- Owl stylesheet -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		
+		<!-- Owl Theme -->
+		<link rel="stylesheet" href="css/owl.theme.css">
+				
+		<!-- NIGHTLY style -->
+		<link rel="stylesheet" href="css/nightly.css" />
+				
+		<!-- Load Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic|Oswald:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Load Font Awesome Icons -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- jQueryMobile -->
+		<script src="js/jquery.mobile.min.js"></script>
+		
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/SocialSharing.js"></script>
+        <script src="cordova.js"></script>
+
+    </head>
+    	<body>
+        <div data-role="page" data-theme='a'>
+           <div data-role="panel" data-display="push" id="sidebar" data-theme="a" style="background-color:#CF982E; border:none;">
+                <ul data-role="listview">
+                    <li data-icon='false'><a data-ajax="false" href="index.html">Home</a></li>
+					<li data-icon='false'><a data-ajax="false" href="about.html">Who we are</a></li>
+					<li data-icon='false'><a data-ajax="false" href="wedo.html">What we do</a></li>
+					<li data-icon='false'><a data-ajax="false" href="whydo.html">Why we do it</a></li>
+					
+                    <li data-icon='false'><a data-ajax="false" href="donate.html">How to donate</a></li>
+					<li data-icon='false'><a data-ajax="false" href="contact.html">Contact</a></li>
+                </ul>
+            </div> 
+			
+			
+            <div data-role="header" data-tap-toggle="false" data-theme='a' style="background-color:#CF982E; position:fixed; top:0; z-index:9000; height:50px; border:none">
+                <a href='#sidebar'data-role="none">
+                	<img src="images/menu-icon.png" alt="sidebar" id="header-menu-icon" style="top:20px" />
+				</a>
+            </div>
+            <div>
+                <img src="images/logo.png" width="100" style="position:fixed; top:20px; right:20px; z-index:1000; width:20%; max-width:100px" />
+			</div>
+            <div data-role="content">
+                <div class="align-center" style="position:relative; top:50px">
+                    <h2>
+                    	Why we do it
+                    </h2>
+					<div class="row">
+						<div>
+                        	<img class="img-responsive" src="images/2014/10/Premium-Pine-Lexington-Wooden-Swing-Set21.jpg" alt="Premium-Pine-Lexington-Wooden-Swing-Set"/>
+						</div>
+						<div>
+							
+							<h3 style=" text-align:center; padding:5px 0">
+                                Our History
+							</h3>
+							<p>
+								In the fall of 1996 a series of incidents and circumstances in Charlotte-Mecklenburg focused attention on racial division within the community. A police shooting, the prospect of public school resegregation, as well as the increasing ethnic diversity of the community, all contributed to a climate of unrest. Another factor contributing to civic unrest was the influx of large numbers of new residents who were either unaware of or unconnected to Charlotte’s historical image of having dealt positively with issues of race and discrimination.<br>
+
+								The Community Building Task Force was created in 1997 to respond to these pressures at the request and with the support of Foundation For The Carolinas, the Mecklenburg Board of County Commissioners and the Charlotte City Council. A landmark civic engagement event entitled "Something Has Begun" drew over 600 residents to launch the effort in December 1997.<br>
+
+								The effort, re-named Community Building Initiative, became a permanent organization in 1999, and thousands of residents have become involved since that time. From large-scale civic engagement events, small-group and organizational resource team work, to individual growth and discovery, Community Building Initiative evolved to serve the community as a permanent resource for individuals, community organizations and institutions to turn to for strategic assistance in addressing issues of racial and ethnic inclusion and equity.<br>
+							</p>											
+                            <p>
+								<button type="button" onClick=window.open('http://cbicharlotte.org/why-we-do-it/history','_system') style="background-color:#CF982E; color:#FFF">
+                            		Read More
+	                            </button>
+                            </p>
+						</div>
+					</div>
+                </div>
+			</div>
+			<script type="text/javascript">
+        		$(document).ready(function() {
+					$("#slider").owlCarousel({   
+						slideSpeed : 700,
+						paginationSpeed : 700,
+						rewindSpeed : 1500,
+						singleItem : true,
+						pagination : true,
+						lazyLoad : true,
+						autoPlay : 7000,
+						navigation: true,
+						navigationText: [
+							"<i class='owl-nav-left fa fa-angle-left'></i>",
+							"<i class='owl-nav-right fa fa-angle-right'></i>"
+						]
+					});          
+					$("#gallery").owlCarousel({    
+						slideSpeed : 700,
+						paginationSpeed : 700,
+						rewindSpeed : 1500,
+						singleItem : true,
+						pagination : true,
+						lazyLoad : true,
+						autoPlay : 7000,
+						navigation: true,
+						navigationText: [
+							"<i class='owl-nav-left fa fa-angle-left'></i>",
+							"<i class='owl-nav-right fa fa-angle-right'></i>"
+						]
+					});    
+				});
+        	</script>
+		</div>
+    </body>
+</html>
